@@ -22,6 +22,10 @@
 进行JSP及Html文件的编写
 
 
+
+
+
+
 ## 相关知识点
 注解类 <br/>
 注解简化代码并提高编码的效率 <br/>
@@ -44,10 +48,20 @@ params： 指定request中必须包含某些参数值是，才让该方法处理
 headers： 指定request中必须包含某些指定的header值，才能让该方法处理请求。 <br/>
 
 地址的正则：
-* <br/>
+\* <br/>
 ** <br/>
 ？？ <br/>
 {userid} <br>
+
+##### @PathVariable
+可以将 URL 中占位符参数绑定到控制器处理方法的入参中：URL 中的 {xxx} 占位符可以通过@PathVariable("xxx") 绑定到操作方法的入参中。<br/>
+##### @RequestParam 属性 value，required,defaultValue
+相当于request.getParameter("name"); <br/>
+
+##### @CookieValue 属性 value，required,defaultValue
+与上面类似
+。。。
+
 
 
 
